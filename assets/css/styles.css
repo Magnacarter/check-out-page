@@ -17,6 +17,7 @@ body {
   font-weight: 700;
 }
 #content-wrapper h2 {
+  font-weight: 700;
   font-size: 26px;
 }
 #content-wrapper p {
@@ -38,6 +39,10 @@ body {
 }
 #content-wrapper h1.page-title {
   margin: 40px;
+}
+#content-wrapper .content-section {
+  padding-top: 20px;
+  border-top: solid 1px #cad3d8;
 }
 @media (max-width: 767px) {
   #content-wrapper .content-section {
@@ -74,11 +79,16 @@ body {
   width: auto;
   height: auto;
 }
+#content-wrapper .content-section input#month,
+#content-wrapper .content-section input#year,
+#content-wrapper .content-section input#cvc {
+  width: 32%;
+}
 #content-wrapper .content-section form#payment-info {
   margin-bottom: 3px;
 }
 #content-wrapper .content-section .btn-wrap {
-  padding: 24px 0;
+  padding: 19px 0;
   background-color: #f18003;
   border-radius: 50px;
 }
