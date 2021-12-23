@@ -1,0 +1,147 @@
+$orange: #f18003;
+$purple: #7d027d;
+$light-grey: #c9d2d8;
+$grey: #838a8f;
+$dark-grey: #2e3840;
+$top-sidebar-bg: #f0f2f3;
+$pink: #deadde;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+.text-center {
+	text-align: center;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+#content-wrapper {
+	font-family: 'Poppins', sans-serif;
+	h1 {
+		font-size: 53px;
+		font-weight: 700;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 16px;
+	}
+	a {
+		font-size: 17px;
+		color: $orange;
+		text-decoration: underline;
+	}
+	input {
+		width: 100%;
+		height: 48px;
+		margin-bottom: 10px;
+		border-radius: 3px;
+		border: solid 1px $light-grey;
+		color: $grey;
+		padding-left: 14px;
+	}
+	h1.page-title {
+		margin: 40px;
+	}
+	.content-section {
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+		select#state,
+		select#occupation {
+			width: 40%;
+			height: 48px;
+			margin-bottom: 10px;
+			border-radius: 3px;
+			border: solid 1px $light-grey;
+			color: $grey;
+			padding-left: 14px;
+		}
+		input#username {
+			width: 58%
+		}
+		input#city {
+			width: 37%;
+		}
+		select#state {
+			width: 30%;
+		}
+		input#zip {
+			width: 30%
+		}
+		input#card {
+			width: auto;
+			height: auto;
+		}
+		input#order {
+			width: auto;
+			height: auto;
+		}
+		form#payment-info {
+			margin-bottom: 3px;
+		}
+		.btn-wrap {
+			padding: 24px 0;
+			background-color: $orange;
+			border-radius: 50px;
+			#pay-now {
+				font-size: 22px;
+				padding: 24px 68px;
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+	.sidebar-wrapper {
+		h2, h3 {
+			font-size: 21px;
+			color: $grey;
+			font-weight: 300;
+		}
+		h3 {
+			color: $dark-grey;
+		}
+		p {
+			font-size: 17px;
+		}
+		.sidebar-top {
+			margin-bottom: 16px;
+			padding: 19px 22px;
+			background-color: $top-sidebar-bg;
+			border-radius: 5px;
+			select#sub {
+				width: 100%;
+				height: 48px;
+				margin-bottom: 10px;
+				border-radius: 3px;
+				border: solid 1px $light-grey;
+				color: $grey;
+				padding-left: 14px;
+			}
+		}
+		.sidebar-bottom {
+			padding: 12px 16px;
+			background-color: $purple;
+			border-radius: 5px;
+			h4 {
+				font-size: 17px;
+				color: white;
+			}
+			h5 {
+				font-size: 16px;
+				color: $pink;
+			}
+			h4#sb-bottom-title {
+				&:before {
+					content:url('../images/bell.png');
+					width: 40px;
+					height: 40px;
+				}
+			}
+		}
+	}
+}
+
